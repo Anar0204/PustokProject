@@ -1,6 +1,6 @@
 using PustokProject.appDbContext;
-using Microsoft.EntityFrameworkCore;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +29,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
 
 
 app.Run();
