@@ -338,3 +338,4 @@ C:\Users\anarpi\Desktop\PustokProject\PustokProject\obj\Debug\net8.0\refint\Pust
 C:\Users\anarpi\Desktop\PustokProject\PustokProject\obj\Debug\net8.0\PustokProject.pdb
 C:\Users\anarpi\Desktop\PustokProject\PustokProject\obj\Debug\net8.0\PustokProject.genruntimeconfig.cache
 C:\Users\anarpi\Desktop\PustokProject\PustokProject\obj\Debug\net8.0\ref\PustokProject.dll
+C:\Users\Asus\Desktop\PustokProject\PustokProject\obj\Debug\net8.0\PustokProject.sourcelink.json

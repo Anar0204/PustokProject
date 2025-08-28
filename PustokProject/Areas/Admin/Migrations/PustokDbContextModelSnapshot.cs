@@ -52,6 +52,13 @@ namespace PustokProject.Migrations
                     b.Property<int>("GenreId")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.PrimitiveCollection<string>("TagIds")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -78,6 +85,21 @@ namespace PustokProject.Migrations
                     b.HasIndex("ImageId");
 
                     b.ToTable("BookImages");
+                });
+
+            modelBuilder.Entity("PustokProject.Models.BookTag", b =>
+                {
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BookId", "TagId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("BookTags");
                 });
 
             modelBuilder.Entity("PustokProject.Models.Genre", b =>
@@ -143,6 +165,23 @@ namespace PustokProject.Migrations
                     b.ToTable("Sliders");
                 });
 
+            modelBuilder.Entity("PustokProject.Models.Tag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tags");
+                });
+
             modelBuilder.Entity("PustokProject.Models.Book", b =>
                 {
                     b.HasOne("PustokProject.Models.Author", "Author")
@@ -181,14 +220,40 @@ namespace PustokProject.Migrations
                     b.Navigation("Image");
                 });
 
+            modelBuilder.Entity("PustokProject.Models.BookTag", b =>
+                {
+                    b.HasOne("PustokProject.Models.Book", "Book")
+                        .WithMany("BookTags")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PustokProject.Models.Tag", "Tag")
+                        .WithMany("BookTags")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Tag");
+                });
+
             modelBuilder.Entity("PustokProject.Models.Book", b =>
                 {
                     b.Navigation("BookImages");
+
+                    b.Navigation("BookTags");
                 });
 
             modelBuilder.Entity("PustokProject.Models.Image", b =>
                 {
                     b.Navigation("BookImages");
+                });
+
+            modelBuilder.Entity("PustokProject.Models.Tag", b =>
+                {
+                    b.Navigation("BookTags");
                 });
 #pragma warning restore 612, 618
         }

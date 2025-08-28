@@ -13,6 +13,8 @@ namespace PustokProject.appDbContext
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<BookImage> BookImages { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<BookTag> BookTags { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,8 +27,18 @@ namespace PustokProject.appDbContext
                 .HasOne(bi => bi.Image)
                 .WithMany(i => i.BookImages)
                 .HasForeignKey(bi => bi.ImageId);
+
+            modelBuilder.Entity<BookTag>().HasKey(bt => new { bt.BookId, bt.TagId });
+            modelBuilder.Entity<BookTag>()
+                .HasOne(bt => bt.Book)
+                .WithMany(b => b.BookTags)
+                .HasForeignKey(bt => bt.BookId);
+            modelBuilder.Entity<BookTag>()
+                .HasOne(bt => bt.Tag)
+                .WithMany(t => t.BookTags)
+                .HasForeignKey(bt => bt.TagId);
+
             base.OnModelCreating(modelBuilder);
         }
     }
-
 }
