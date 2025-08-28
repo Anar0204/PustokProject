@@ -42,7 +42,7 @@ namespace PustokProject.Areas.Admin.Controllers
             return View(author);
         }
 
-        [HttpPost]
+        [HttpPut]
         public IActionResult Edit(Author author)
         {
             if (!ModelState.IsValid)

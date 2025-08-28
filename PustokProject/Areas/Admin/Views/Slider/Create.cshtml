@@ -1,0 +1,34 @@
+﻿@model Slider
+
+<h2>Create Slider</h2>
+
+<form asp-area="Admin" asp-controller="Slider" asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Title1" class="form-label"></label>
+        <input asp-for="Title1" class="form-control" />
+        <span asp-validation-for="Title1" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="desc" class="form-label"></label>
+        <textarea asp-for="desc" class="form-control"></textarea>
+        <span asp-validation-for="desc" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ButtonText" class="form-label"></label>
+        <textarea asp-for="ButtonText" class="form-control"></textarea>
+        <span asp-validation-for="desc" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Order" class="form-label"></label>
+        <input asp-for="Order" class="form-control" type="number" min="1" />
+        <span asp-validation-for="Order" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm">
+        <i class="bi bi-plus"></i> Create
+    </button>
+    <a asp-area="Admin" asp-controller="Slider" asp-action="Index" class="btn btn-secondary btn-sm ms-2">Cancel</a>
+</form>

@@ -1,0 +1,24 @@
+﻿@model Slider
+
+<h2>Slider Details</h2>
+
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        @if (!string.IsNullOrEmpty(Model.BackgrounImageName))
+        {
+            <div class="col-md-4">
+                <img src="~/adminAssets/img/slider/@Model.BackgrounImageName" class="img-fluid rounded-start" alt="Slider Image">
+            </div>
+        }
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Title1</h5>
+                <p class="card-text">@Model.desc</p>
+                <p class="card-text">@Model.ButtonText</p>
+                <p class="card-text"><small class="text-muted">Order: @Model.Order</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a asp-area="Admin" asp-controller="Slider" asp-action="Index" class="btn btn-secondary btn-sm">Back to List</a>

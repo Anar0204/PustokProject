@@ -9,8 +9,7 @@
         public Author Author { get; set; }
         public int GenreId { get; set; }
         public Genre Genre { get; set; }
-        public List<BookImage> BookImages { get; set; }
-        public List<BookTag> BookTags { get; set; }
-        public List<int> TagIds { get; set; }
+        public List<BookImage>? BookImages { get; set; }
+        public List<BookTag>? BookTags { get; set; }
     }
 }

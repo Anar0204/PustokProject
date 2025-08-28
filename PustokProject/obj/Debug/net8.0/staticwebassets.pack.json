@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\adminAssets\\css\\sb-admin-2.min.css"
     },
     {
+      "Id": "C:\\Users\\anarpi\\Desktop\\PustokProject\\PustokProject\\wwwroot\\adminAssets\\img\\slider\\96804624-799c-4888-a32b-fa1dc8ee7b52slider1.jfif",
+      "PackagePath": "staticwebassets\\adminAssets\\img\\slider\\96804624-799c-4888-a32b-fa1dc8ee7b52slider1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\anarpi\\Desktop\\PustokProject\\PustokProject\\wwwroot\\adminAssets\\img\\slider\\e380dde4-c8ed-49b0-be0f-ea67b3e94940slider1.jfif",
+      "PackagePath": "staticwebassets\\adminAssets\\img\\slider\\e380dde4-c8ed-49b0-be0f-ea67b3e94940slider1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\anarpi\\Desktop\\PustokProject\\PustokProject\\wwwroot\\adminAssets\\img\\slider\\e8535186-25cb-441f-b199-121715cc6223slider1.jfif",
+      "PackagePath": "staticwebassets\\adminAssets\\img\\slider\\e8535186-25cb-441f-b199-121715cc6223slider1.jfif"
+    },
+    {
       "Id": "C:\\Users\\anarpi\\Desktop\\PustokProject\\PustokProject\\wwwroot\\adminAssets\\img\\undraw_posting_photo.svg",
       "PackagePath": "staticwebassets\\adminAssets\\img\\undraw_posting_photo.svg"
     },
