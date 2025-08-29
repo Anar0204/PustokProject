@@ -36,59 +36,77 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\css\sb-admin-2.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\96804624-799c-4888-a32b-fa1dc8ee7b52slider1.jfif'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\31f14ed9-9e8e-4149-83b5-354287873b5fhome-4-slider-1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>PustokProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/PustokProject</BasePath>
-      <RelativePath>adminAssets/img/slider/96804624-799c-4888-a32b-fa1dc8ee7b52slider1.jfif</RelativePath>
+      <RelativePath>adminAssets/img/slider/31f14ed9-9e8e-4149-83b5-354287873b5fhome-4-slider-1.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>occj6cq0h5</Fingerprint>
-      <Integrity>SNuD9V2TU999lNUZ68HnokVnQSYbF9QKGGYPC2NaNWw=</Integrity>
+      <Fingerprint>cc7fmexdks</Fingerprint>
+      <Integrity>FA8eXYPSCz3SB2aRx/c7IFblFi7RulDYDqAocXkxklM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\96804624-799c-4888-a32b-fa1dc8ee7b52slider1.jfif'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\31f14ed9-9e8e-4149-83b5-354287873b5fhome-4-slider-1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\e380dde4-c8ed-49b0-be0f-ea67b3e94940slider1.jfif'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\6d1a5ef8-6f8f-4a89-a8ab-f169d98019eehome-3-slider-1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>PustokProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/PustokProject</BasePath>
-      <RelativePath>adminAssets/img/slider/e380dde4-c8ed-49b0-be0f-ea67b3e94940slider1.jfif</RelativePath>
+      <RelativePath>adminAssets/img/slider/6d1a5ef8-6f8f-4a89-a8ab-f169d98019eehome-3-slider-1.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>occj6cq0h5</Fingerprint>
-      <Integrity>SNuD9V2TU999lNUZ68HnokVnQSYbF9QKGGYPC2NaNWw=</Integrity>
+      <Fingerprint>f8joeupmie</Fingerprint>
+      <Integrity>X40TlvhTDlBMYbWJeD+zRZJp/kc692YQsM/9V1f5Woc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\e380dde4-c8ed-49b0-be0f-ea67b3e94940slider1.jfif'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\6d1a5ef8-6f8f-4a89-a8ab-f169d98019eehome-3-slider-1.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\e8535186-25cb-441f-b199-121715cc6223slider1.jfif'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\9ca9dbba-b682-48b8-aca2-1d2c19f342bfhome-4-slider-2.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>PustokProject</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/PustokProject</BasePath>
-      <RelativePath>adminAssets/img/slider/e8535186-25cb-441f-b199-121715cc6223slider1.jfif</RelativePath>
+      <RelativePath>adminAssets/img/slider/9ca9dbba-b682-48b8-aca2-1d2c19f342bfhome-4-slider-2.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>occj6cq0h5</Fingerprint>
-      <Integrity>SNuD9V2TU999lNUZ68HnokVnQSYbF9QKGGYPC2NaNWw=</Integrity>
+      <Fingerprint>mxu027j05r</Fingerprint>
+      <Integrity>ZnWig8390sTNOpNkdCXuyjVwfUDVkX58iCPk5JlDa9Y=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\e8535186-25cb-441f-b199-121715cc6223slider1.jfif'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\9ca9dbba-b682-48b8-aca2-1d2c19f342bfhome-4-slider-2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\a914ef95-b4ee-40c2-b2dc-97e7472d5ab9home-2-slider-2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>PustokProject</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PustokProject</BasePath>
+      <RelativePath>adminAssets/img/slider/a914ef95-b4ee-40c2-b2dc-97e7472d5ab9home-2-slider-2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lk7r8kfmcq</Fingerprint>
+      <Integrity>61gbAwjT8lXLeTIlQ4IHsm+sPkCdM8PJXjiZNbljkUo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\slider\a914ef95-b4ee-40c2-b2dc-97e7472d5ab9home-2-slider-2.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\adminAssets\img\undraw_posting_photo.svg'))">
       <SourceType>Package</SourceType>

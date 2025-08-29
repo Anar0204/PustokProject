@@ -49,6 +49,12 @@ namespace PustokProject.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
                 return View();
+
+            if(slider.ImageFile != null)
+            {
+                FileHelper.DeleteFile(slider.BackgrounImageName, "slider");
+                slider.BackgrounImageName = FileHelper.SaveFile(slider.ImageFile, "slider");
+            }
             _pustokDbContext.Sliders.Update(slider);
             _pustokDbContext.SaveChanges();
             return RedirectToAction("Index");

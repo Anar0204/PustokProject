@@ -1,1 +1,43 @@
-﻿
+﻿@model Slider
+
+<h2>Edit Slider</h2>
+
+<form asp-area="Admin" asp-controller="Slider" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="BackgrounImageName" />
+    <div class="mb-3">
+        <label asp-for="Title1" class="form-label"></label>
+        <input asp-for="Title1" class="form-control" />
+        <span asp-validation-for="Title1" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="desc" class="form-label"></label>
+        <textarea asp-for="desc" class="form-control"></textarea>
+        <span asp-validation-for="desc" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ButtonText" class="form-label"></label>
+        <input asp-for="ButtonText" class="form-control" />
+        <span asp-validation-for="ButtonText" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Order" class="form-label"></label>
+        <input asp-for="Order" class="form-control" type="number" min="1" />
+        <span asp-validation-for="Order" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Current Image</label><br />
+        @if (!string.IsNullOrEmpty(Model.BackgrounImageName))
+        {
+            <img src="~/adminAssets/img/slider/@Model.BackgrounImageName" alt="Slider Image" class="img-thumbnail mb-2" style="max-width: 200px;" />
+        }
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Change Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success btn-sm">
+        <i class="bi bi-pencil"></i> Save
+    </button>
+    <a asp-area="Admin" asp-controller="Slider" asp-action="Index" class="btn btn-secondary btn-sm ms-2">Cancel</a>
+</form>
